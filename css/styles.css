@@ -1,1 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,300;0,400;1,300&family=Open+Sans:ital,wght@0,700;0,800;1,600;1,800&family=Ubuntu:ital,wght@0,300;0,400;1,700&display=swap');
 
+*{
+    /*sets to default for clean styling*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#css-zen-garden{
+    font-size: 18px;
+    padding: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #1b1b1a;
+    background-image: url(./images/bee.png);
+    background-repeat: repeat;
+    background-size: 60%;
+    
+}
+
+/*page wrapper styling starts*/
+.page-wrapper{
+    background-image: url("https://cdn.pixabay.com/photo/2020/05/11/15/38/tom-5158824__480.png");
+    /* sets jerry the cool cat as form background image*/
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment:unset;
+    background-color: rgb(242, 238, 238);
+    max-height: fit-content;
+    display: block;
+    position: absolute;
+    margin-left: 40px;
+    margin-right: 90px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    padding: 40px;
+    border: 5px solid #e87509;
+}
+
+/*page wrapper styling ends*/
+
+ h3{
+    font-family: 'ubuntu', sans-serif;
+    text-shadow: 2px 2px 5px #6b6967;
+    font-weight: 600;
+    font-size: 1.3rem;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+ h1{
+    font-family: 'Caveat', cursive;
+    display: flex;
+    font-weight: 800;
+    font-size: 5rem;
+    position: relative;
+    color: #12100b;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px #e87509;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+}
+
+/* header h1 annimation keyframe */
+@keyframes grow {
+    10% {
+		transform: translate(-4rem) scale(.8);
+        opacity: 0;
+	}
+    100% {
+		opacity: 1;
+        transform: none;
+	}
+}
+
+h1{
+    opacity: 0;
+    transform: scale(0);
+    animation: grow 1s ease-out forwards;
+}
+
+h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 5px #2d1601;
+    margin-bottom: 15px; 
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 5px;
+    line-height: 2.4rem;
+    color: #000000;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    text-align: left;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    font-style: oblique;
+    color: #1b1b1a; 
+}
+
+abbr{
+    text-decoration: none;
+}
+
+/*header content styling starts*/
+.intro header {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    color: #12100b;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.summary{
+    padding: 15px;
+    width: 750px;
+    margin: 0 auto;
+    text-align: left;
+    padding-bottom: 90px;  
+}
+
+.summary p{
+    /*summary paragraph styling*/
+    font-family: 'josefin', sans-serif;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    color: #12100b;
+    text-shadow: 2px 2px 5px #6b6967;
+}
+/*header content styling ends*/
+
+
+/*main content styling starts*/
+#zen-supporting {
+    min-height: 100vh;
+    min-width: 100%;
+    display: block;
+    flex-basis:80%;
+    margin-top: 30px;
+    padding: 30px;
+    position: relative;
+    align-content: center;
+justify-content: center;
+}
+
+/*preamble class styling starts*/
+ .preamble{
+    border: 6px solid rgb(0, 0, 0);
+    padding: 10px;
+    margin-left: 180px;
+    margin-right:190px;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    background-color: olivedrab; 
+    margin-bottom: -30px;
+}
+.preamble h3{
+    /*preamble class heading styling*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.preamble p{
+    /*preamble class paragraph styling*/
+    align-items: left;
+    justify-content: left;
+}
+/*preamble class styling ends*/
+
+/*zen-explanation id styling starts*/
+#zen-explanation{
+    padding: 10px;
+    margin: 20px;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 3%;
+    max-width: 60%;
+    max-height: fit-content;
+    margin-left: 150px;
+    background-color: #d9ceba; 
+   
+}
+
+#zen-explanation h3{
+    /*zen-explanation header styling*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#zen-explanation p{
+    /*zen-explanation paragraph styling*/
+    align-items: left;
+    justify-content: left;
+}
+/*zen-explanation id styling ends*/
+
+/*zen-participation id styling starts*/
+.participation{
+    padding: 10px;
+    margin: 20px;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 3%;
+    max-width: 60%;
+    max-height: fit-content;
+    margin-left: 150px;
+    background-color: #d9ceba; 
+}
+
+.participation h3{
+    /*zen-participation header styling*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#participation p{
+    /*zen-participation paragraph styling*/
+    align-items: left;
+    justify-content: left;
+}
+/*zen-participation id styling ends*/
+
+/*zen-benefits id styling starts*/
+#zen-benefits{
+    padding: 10px;
+    margin: 20px;
+    border-radius: 3%;
+    max-width: 97%;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 6%;
+    margin-right: 150px;
+    margin-left: 150px;
+    background-color: #d9ceba; 
+}
+
+#zen-benefits h3{
+    /*zen-benefits header styling*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#zen-benefits p{
+    /*zen-benefits paragraph styling*/
+    align-items: left;
+    justify-content: left;
+}
+/*zen-benefits id styling ends*/
+
+
+ /*zen-requirement id styling starts*/
+#zen-requirements{
+    padding: 10px;
+    margin: 20px;
+    border-radius: 3%;
+    max-width: 97%;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 3%;
+    margin-right: 150px;
+    margin-left: 150px;
+    background-color: #d9ceba; 
+}
+
+
+
+#zen-requirements h3{
+    /*zen-requirement header styling*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ #zen-requirements p{
+    /*zen-requirement paragraph styling*/
+    align-items: left;
+    justify-content: left;
+ }
+  /*zen-requirement id styling starts*/
+
+
+  /*sidebar styling starts*/
+ .sidebar{
+    background-color: #515150;
+    float: right;
+    padding: 10px;
+    padding-top: 10px;
+    padding-right: 30px;
+    margin-right: 170px;
+    margin-top: -121.5%;
+    margin-bottom: 10%;
+    display: flex;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 3%;
+    align-items: center;
+    justify-content: center;
+    max-width: 70%;
+ }
+
+
+ .sidebar li{
+     /*sidebar list styling*/
+    list-style: none;
+    color: #d0cdca;
+    font-family: 'open sans'sans-serif;
+    letter-spacing: .05rem;
+ }
+ 
+ .sidebar li a{
+    color: #d0cdca;
+    display: flex;
+    list-style: none;  
+    align-content: left;
+    justify-content: left;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.9em;
+    letter-spacing: .05rem;
+ }
+
+ .sidebar h3{
+     /*sidebar header styling*/
+    color: #e87509;
+    display: flex;
+    text-shadow:none;
+    text-decoration-line: underline;
+    text-decoration-color: #323131;
+    font-weight: 500;
+    font-size: 1.3rem;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-weight: 300;
+ }
+ /*sidebar styling ends*/
+
+ /*stylinng design selection heading*/
+ #design-selection h3{
+    margin-bottom: 10px;
+ }
+
+ #design-archives{
+    margin-top: 50px;
+ }
+ #design-archives h3{
+    margin-bottom: 10px;
+ }
+
+ #zen-resources{
+    margin-top: 50px;
+ }
+
+ #design-resources h3{
+    margin-bottom: 10px;
+ }
+ /*stylinng design selection headings end*/
+
+ /*footer styling starts*/
+footer {
+    margin-top: 60px;
+    background-size: cover;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+footer a{
+    display: flex;
+    color: #a9a199;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    letter-spacing: .2rem;
+    padding: 10px;
+    background-color: #1b1b1a;
+
+}
+
+/*styling footer wrapper*/
+.page-wrapper footer{ 
+    display: flex;
+    left: 40%;
+    border: 5px solid #e87509;
+    position: absolute;
+    margin-left: 0px;
+    margin-right: 0px;
+/*footer styling sends*/
+}
+/*main content styling ends*/
